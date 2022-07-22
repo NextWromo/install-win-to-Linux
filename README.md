@@ -1,9 +1,12 @@
 # install-win-to-Linux
 win to Linux server vps
 
-###########################################################################################
-################ WINDOWS   install  on VPS  SERVER  #########################################
-############################################################################################
+################################################################
+################ WINDOWS   install  on VPS  SERVER  ############
+################################################################
+
+
+
 sudo su
 apt install gparted filezilla grub2 wimtools -y
 
@@ -31,12 +34,14 @@ w
 Y
 
 ========================
+
 mount /dev/sda1 /mnt
 cd ~
 mkdir disk
 mount /dev/sda2 disk
 grub-install --root-directory=/mnt /dev/sda
-cd /mnt/boot/grub 
+cd /mnt/boot/grub
+
 ========================
 
 nano grub.cfg
@@ -93,6 +98,7 @@ florence
 ========================================
 COMMANDS RUN THROUGH USER@DEBIAN
 ========================================
+
 cd /mnt/sources
 
 ========================
